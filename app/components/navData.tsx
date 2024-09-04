@@ -29,7 +29,7 @@ export default function NavData() {
         {navData.map(({ key, name, path }) => (
           <Link
             key={key}
-            className="text-[#333333] text-lg font-semibold pr-5"
+            className="pl-2 text-[#333333] text-lg font-semibold "
             href={path}
           >
             {name}

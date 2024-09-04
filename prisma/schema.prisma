@@ -12,3 +12,34 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model Campus_Shuttle_BusDetail{
+  id String @id @default(uuid())
+  bus_number Int @unique
+  bus_RTO_number String @unique 
+  bus_conductor_name String
+  bus_conductor_contact_number String
+}
+
+model Campus_Shuttle_BusTimeTable{
+  id String @id @default(uuid())
+  from String
+  to String
+  OutTime String
+  days DAYS 
+}
+// displayed table ko according to days mein sorted karna 
+// 
+
+
+enum DAYS{
+  Monday
+  Tuesday
+  Wednesday
+  Thursday
+  Friday
+  Saturday
+  Sunday
+  Monday_to_Friday
+  Saturday_and_Sunday
+}
