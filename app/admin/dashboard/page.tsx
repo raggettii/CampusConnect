@@ -3,6 +3,8 @@ import "server-only";
 import BusDetailHeader from "@/app/components/busDetailsHeader";
 import TableDataComponent from "@/app/components/tableDataComponent";
 import { busDetailsType, shuttleTimetableType } from "@/app/types/types";
+import DropdownComponent from "@/app/components/dropdownComponent";
+import ModalComponent from "@/app/components/modalComponent";
 
 export default function AdminDashboard() {
   // busdetails ko time table se connected hona chahia
@@ -84,11 +86,18 @@ export default function AdminDashboard() {
   return (
     <>
       <div className="max-h-full min-h-[678px]">
-        <h1 className="text-slate-800 font-bold text-2xl mt-4 ml-2">
+        <h1 className="flex text-slate-800 font-bold text-2xl mt-4 ml-2">
           Current Timetable Overview
+          {/* <WrapperComponent text={"+ Add Bus"} /> */}
+          {/* <ButtonComponent onClickHandler={() => {}} /> */}
         </h1>
-        <BusDetailHeader busDetails={busDetails} />
-        {/* <ButtonComponent /> */}
+        <ModalComponent heading="Add Bus" />
+        {/* <ModalComponent heading="Add Bus" /> */}
+
+        <div className="flex">
+          <BusDetailHeader busDetails={busDetails} />
+          <DropdownComponent className=" z-1 fixed left-[275px] top-[150px] " />
+        </div>
         <TableDataComponent
           busDetails={busDetails}
           shuttleTimetable={shuttleTimetable}

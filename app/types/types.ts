@@ -34,3 +34,34 @@ export type shuttleTimetableType = {
   outTime: string;
   days: string;
 };
+
+export type imageComponentType = {
+  className: string;
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+};
+
+export type buttonComponentType = {
+  className?: string;
+  onClickHandler: () => void;
+  imageComponent?: imageComponentType;
+  text?: string;
+  physicalButton: boolean;
+  textOnPhysicalButton?: string;
+  disabled?: boolean;
+};
+
+export type inputBoxType = {
+  headerText: string;
+  placeHolder: string;
+  type?: string;
+  required: boolean;
+  value: string | number | undefined;
+  onChange: React.ChangeEventHandler;
+};
+
+export type modelComponentType = {
+  heading: string;
+};

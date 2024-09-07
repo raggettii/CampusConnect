@@ -15,7 +15,7 @@ export default function TableDataComponent({
   return (
     <div>
       {shuttleTimetable.length > 0 ? (
-        <table className="w-full table-auto border-collapse">
+        <table className=" w-full table-auto border-collapse">
           <thead>
             <tr className=" bg-slate-400 text-gray-700">
               <th className="p-2 border border-gray-300 w-1/4">From</th>

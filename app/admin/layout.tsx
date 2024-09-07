@@ -1,3 +1,4 @@
+import { Toaster } from "react-hot-toast";
 import MainLogo from "../components/mainLogo";
 import NavBar from "../components/navbar";
 import NavData from "../components/navData";
@@ -14,6 +15,7 @@ export default function RootLayout({
         <NavData />
       </NavBar>
       {children}
+      <Toaster position="top-right" />
     </>
   );
 }
