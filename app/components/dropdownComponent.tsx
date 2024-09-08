@@ -31,33 +31,35 @@ export default function DropdownComponent({
     className: " mt-4 ml-1",
     src: "/icons/editPen.svg",
     alt: "editTT",
-    width: 14,
-    height: 14,
+    width: 20,
+    height: 20,
   };
   return (
     <>
-      <ButtonComponent
-        physicalButton={false}
-        onClickHandler={dropdownToggler}
-        imageComponent={buttonImageData}
-      />
-      {isDropdown && (
-        <div className={`${className}`}>
-          <div
-            className={` flex flex-col bg-slate-50 p-2 rounded-md shadow-md  `}
-          >
-            {options.map((item) => (
-              <div
-                onClick={() => {}}
-                key={Math.random()}
-                className="hover:cursor-pointer bg-slate-400 mt-1 text-slate-700 hover:text-slate-800 hover:bg-slate-300 font-semibold rounded-sm shadow-md"
-              >
-                {item.text}
-              </div>
-            ))}
+      <div>
+        <ButtonComponent
+          physicalButton={false}
+          onClickHandler={dropdownToggler}
+          imageComponent={buttonImageData}
+        />
+        {isDropdown && (
+          <div className={`${className}`}>
+            <div
+              className={` flex flex-col bg-slate-50 p-2 rounded-md shadow-md  `}
+            >
+              {options.map((item) => (
+                <div
+                  onClick={() => {}}
+                  key={Math.random()}
+                  className="hover:cursor-pointer bg-slate-400 mt-1 text-slate-700 hover:text-slate-800 hover:bg-slate-300 font-semibold rounded-sm shadow-md"
+                >
+                  {item.text}
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </>
   );
 }

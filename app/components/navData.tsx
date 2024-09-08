@@ -8,7 +8,7 @@ import {
 } from "../data/constants";
 
 export default function NavData() {
-  const role: string = "student";
+  const role: string = "conductor";
   let navData: Array<navDataType>;
   switch (role) {
     case "admin":

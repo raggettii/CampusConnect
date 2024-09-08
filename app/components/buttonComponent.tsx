@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { buttonComponentType } from "../types/types";
+import { btnSubmitClassName } from "../data/constants";
 export default function ButtonComponent({
   onClickHandler,
   imageComponent,
@@ -14,8 +15,7 @@ export default function ButtonComponent({
   let textOnButton = "";
   if (physicalButton && textOnPhysicalButton) {
     textOnButton = textOnPhysicalButton;
-    className =
-      "disabled:bg-gray-300 disabled:text-gray-400 text-slate-900 font-bold border-2  bg-slate-500 rounded-lg p-2 hover:bg-slate-600";
+    className = btnSubmitClassName;
   }
   return (
     <>

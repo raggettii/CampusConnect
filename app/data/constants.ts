@@ -12,8 +12,8 @@ export const adminNavBarData = [
 ];
 
 export const conductorNavBarData = [
-  { name: "Routes", path: "/conductor/routes", key: "c1" },
-  { name: "Tickets", path: "/conductor/tickets", key: "c2" },
+  { name: "Dashboard", path: "/conductor/dashboard", key: "c2" },
+  { name: "Authorize Ticket", path: "/conductor/authorize-ticket", key: "c1" },
   { name: "Profile", path: "/conductor/profile", key: "c3" },
 ];
 export const notLoggedInData = [
@@ -70,3 +70,6 @@ export const timeForBookingTicket: Array<dropdownDataType> = [
   { value: "time", label: "Night (8 PM - 12 AM)" },
   { value: "time", label: "Late Night (12 AM - 6 AM)" },
 ];
+
+export const btnSubmitClassName =
+  "disabled:bg-gray-300 disabled:text-gray-400 text-slate-900 font-bold border-2  bg-slate-500 rounded-lg p-2 hover:bg-slate-600";

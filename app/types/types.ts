@@ -45,7 +45,7 @@ export type imageComponentType = {
 
 export type buttonComponentType = {
   className?: string;
-  onClickHandler: (event: React.FormEvent<HTMLFormElement>) => void;
+  onClickHandler: () => void;
   imageComponent?: imageComponentType;
   text?: string;
   physicalButton: boolean;

@@ -7,6 +7,7 @@ import { addBusSchema, bookTicketSchema } from "../zod/zodSchemas";
 import toast from "react-hot-toast";
 import DropdownComponent from "./dropdownComponent";
 import {
+  btnSubmitClassName,
   daysForBookingTicket,
   fromForBookingTicket,
   timeForBookingTicket,
@@ -180,12 +181,13 @@ export default function ModalComponent({
                         setConductorPhoneNumber(e.target.value)
                       }
                     />
-                    <ButtonComponent
+                    <button
                       disabled={isSubmitting}
-                      onClickHandler={handleSubmitForAddingBus}
-                      physicalButton={true}
-                      textOnPhysicalButton="Submit"
-                    ></ButtonComponent>
+                      type="submit"
+                      className={btnSubmitClassName}
+                    >
+                      Submit
+                    </button>
                   </>
                 )}
                 {formType === "book-ticket" && (
@@ -211,12 +213,14 @@ export default function ModalComponent({
                         options={timeForBookingTicket}
                         onSelectOption={handleSelectOption}
                       />
-                      <ButtonComponent
-                        physicalButton={true}
-                        onClickHandler={handleSubmitForBookingTicket}
-                        textOnPhysicalButton="Book Ticket"
-                        disabled={false}
-                      />
+
+                      <button
+                        disabled={isSubmitting}
+                        type="submit"
+                        className={btnSubmitClassName}
+                      >
+                        Book Ticket
+                      </button>
                     </div>
                   </>
                 )}
