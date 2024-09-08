@@ -11,3 +11,10 @@ export const addBusSchema = z.object({
     .string()
     .regex(/^\+91\d{10}$/, { message: "Invalid phone number format." }),
 });
+
+export const bookTicketSchema = z.object({
+  selectedDay: z.string({ message: "Please Select a Day" }),
+  selectedFrom: z.string({ message: "Please Select From" }),
+  selectedTo: z.string({ message: "Please Select To" }),
+  selectedTime: z.string({ message: "Please Select Time" }),
+});

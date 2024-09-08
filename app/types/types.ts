@@ -45,7 +45,7 @@ export type imageComponentType = {
 
 export type buttonComponentType = {
   className?: string;
-  onClickHandler: () => void;
+  onClickHandler: (event: React.FormEvent<HTMLFormElement>) => void;
   imageComponent?: imageComponentType;
   text?: string;
   physicalButton: boolean;
@@ -64,4 +64,26 @@ export type inputBoxType = {
 
 export type modelComponentType = {
   heading: string;
+  buttonHeadingForModal: string;
+  formType: string;
+  formSubmitType: string;
 };
+
+export type editTimeTableOptionsType = {
+  text: string;
+  id?: string;
+};
+
+export type dropdownDataType = {
+  value: string;
+  label: string;
+};
+
+// export type dropdownComponentType = {
+//   className?: string;
+//   physicalButton: boolean;
+//   textOnPhysicalButton?: string;
+//   buttonImageData?: imageComponentType;
+//   dataToDisplayOnDropdown: Array<string>;
+//   handleOptionClick: () => void;
+// };

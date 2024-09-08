@@ -23,6 +23,7 @@ export default function ButtonComponent({
         disabled={disabled}
         className={className}
         onClick={onClickHandler}
+        type="submit"
       >
         {text != undefined && <h2>{text}</h2>}
         {imageComponent != undefined && (

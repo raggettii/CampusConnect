@@ -5,46 +5,46 @@ const NoDataText = "No Journeys Available";
 
 export default function StudentDashboard() {
   const studentJourneys: Array<studentJourneyType> = [
-    // {
-    //   id: "1",
-    //   day: "Monday",
-    //   date: "24/12/24",
-    //   from: "Institute",
-    //   to: "Sadar",
-    //   time: "03:30",
-    // },
-    // {
-    //   id: "2",
-    //   day: "Tuesday",
-    //   date: "24/12/24",
-    //   from: "Kakaltala",
-    //   to: "Russell chauk",
-    //   time: "03:30",
-    // },
-    // {
-    //   id: "3",
-    //   day: "Saturday",
-    //   date: "28/02/24",
-    //   from: "ajmer",
-    //   to: "panti naka",
-    //   time: "03:30",
-    // },
-    // {
-    //   id: "4",
-    //   day: "Mondfhay",
-    //   date: "24/12/24",
-    //   from: "dadddddduuuu",
-    //   to: "Sadafjfr",
-    //   time: "03:30",
-    // },
-    // {
-    //   id: "5",
-    //   day: "Monday",
-    //   date: "24/12/24",
-    //   from: "ram",
-    //   to: "Sadar",
-    //   time: "03:30",
-    // },
+    {
+      id: "1",
+      day: "Monday",
+      date: "24/12/24",
+      from: "Institute",
+      to: "Sadar",
+      time: "03:30",
+    },
+    {
+      id: "2",
+      day: "Tuesday",
+      date: "24/12/24",
+      from: "Kakaltala",
+      to: "Russell chauk",
+      time: "03:30",
+    },
+    {
+      id: "3",
+      day: "Saturday",
+      date: "28/02/24",
+      from: "ajmer",
+      to: "panti naka",
+      time: "03:30",
+    },
+    {
+      id: "4",
+      day: "Mondfhay",
+      date: "24/12/24",
+      from: "dadddddduuuu",
+      to: "Sadafjfr",
+      time: "03:30",
+    },
+    {
+      id: "5",
+      day: "Monday",
+      date: "24/12/24",
+      from: "ram",
+      to: "Sadar",
+      time: "03:30",
+    },
   ];
   return (
     <>
