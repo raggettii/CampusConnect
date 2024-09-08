@@ -18,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} bg-[#F4F4f4] h-full`}>
+        <span className="ml-[50%] bg-red-800">Currently in development</span>
         {children}
         <Toaster position="top-right" />
       </body>
